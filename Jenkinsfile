@@ -20,7 +20,7 @@ pipeline {
 		{
 		  steps{
 		    script{
-		      sh "ansible-playbook MyAppWassim/ansible/docker.yml -i MyAppWassim/ansible/inventory/host.yml"
+		      sh "ansible-playbook MyAppWassim/Ansible/docker.yml -i MyAppWassim/Ansible/inventory/host.yml"
 		    }
 		  }
 		}
