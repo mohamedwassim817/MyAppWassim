@@ -16,7 +16,15 @@ pipeline {
 				}
 			}
 		}
-		
+		stage('docker')
+		{
+		  steps{
+		    script{
+		      sh "ansible-playbook MyAppWassim/ansible/docker.yml -i MyAppWassim/ansible/inventory/host.yml"
+		    }
+		  }
+		}
+
 
 	}
 }
