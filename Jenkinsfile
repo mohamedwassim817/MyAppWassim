@@ -12,7 +12,7 @@ pipeline {
 		{
 			steps{
 				script{
-					sh "ansible-playbook MyAppWassim/ansible/build.yml -i MyAppWassim/ansible/inventory/host.yml"
+					sh "ansible-playbook MyAppWassim/Ansible/build.yml -i MyAppWassim/Ansible/inventory/host.yml"
 				}
 			}
 		}
