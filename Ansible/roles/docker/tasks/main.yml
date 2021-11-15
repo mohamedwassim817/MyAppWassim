@@ -4,7 +4,7 @@
   docker_image:
     name: devops
     build:
-      path: /var/lib/jenkins/workspace/MyFirstAngular-pipeline/MyFirstAngular
+      path: /var/lib/jenkins/workspace/angular/MyAppWassim
       pull: no
     source: build
     state: present
@@ -12,7 +12,7 @@
 - name: run container docker
   docker_container:
     name: myapp_container
-    image: devops:lastet
+    image: devops:latest
     state: started
     recreate: true
     ports:
